@@ -34,4 +34,21 @@ $(document).ready(function(){
 	Cufon.replace('.contact>ul>li>div>p, .contact>ul>li>div>a', {
 		fontSize: '22px'
 	});
+
+	$(".fancy-box").fancybox( {
+		'overlayColor': "#111", 
+		'overlayOpacity': 0.7,
+		'easingIn': 'easeInBack',
+		'easingOut': 'easeOutBack'
+	});
+	
+	$("#contact-me").fancybox( {
+		'easingIn': 'easeInBack',
+		'easingOut': 'easeOutBack',
+	    'padding': 40,
+		'overlayColor': "#111", 
+		'overlayOpacity': 0.7,
+		'scrolling': 'no',
+		'titleShow': false
+    });
 });
