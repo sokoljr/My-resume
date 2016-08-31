@@ -10,7 +10,7 @@ $(document).ready(function(){
 		fontStyle: 'italic',
 		color: '#173D5F'
 	});
-	Cufon.replace('h3', {
+	Cufon.replace('h3, .modal-title', {
 		fontSize: '35px', 
 		fontWeight: 'bold',
 		color: '#333'
@@ -35,20 +35,15 @@ $(document).ready(function(){
 		fontSize: '22px'
 	});
 
-	$(".fancy-box").fancybox( {
-		'overlayColor': "#111", 
-		'overlayOpacity': 0.7,
-		'easingIn': 'easeInBack',
-		'easingOut': 'easeOutBack'
+	$('.print').click(function() {
+     	window.print();
 	});
-	
-	$("#contact-me").fancybox( {
-		'easingIn': 'easeInBack',
-		'easingOut': 'easeOutBack',
-	    'padding': 40,
-		'overlayColor': "#111", 
-		'overlayOpacity': 0.7,
-		'scrolling': 'no',
-		'titleShow': false
-    });
+
+	$('#exampleModal').on('show.bs.modal', function (event) {
+		var button = $(event.relatedTarget) 
+		var recipient = button.data('whatever') 
+		var modal = $(this)
+		modal.find('.modal-title').text('Online contact')
+		modal.find('.modal-body input').val(recipient)
+	});
 });
