@@ -19,9 +19,8 @@
                 </div>
                 <div class="controls">
                     <ul>
-                        <li><a class="save" href="#"></a></li>
-                        <li><button type="button" class="print btn btn-default" data-placement="bottom" title="Print page" data-toggle="tooltip"</button></li>
-                        <li><a class="view-photo" href="#"></a></li>
+                        <li><button type="button" class="print btn btn-default" data-placement="bottom" title="Print page" data-toggle="tooltip"></button></li>
+                        <li><button type="button" class="view-photo btn btn-default" data-placement="bottom" title="View foto" data-toggle="modal" data-toggle="tooltip" data-target="#fotoModal"></button></li>
                         <li><button type="button" class="mail-top btn btn-default" data-placement="bottom" title="Send contact" data-toggle="modal" data-toggle="tooltip" data-target="#exampleModal"></button></li>
                     </ul>
                 </div>
@@ -33,7 +32,7 @@
                         <li>
                             <div>
                                 <img src="img/adress.png" alt="adress">
-                                <p>69035, Independent Ukraine str 39g, Voznesenovskiy, Zaporozhye, Ukraine</p>
+                                <p>69035, Independent Ukraine str 39g, Voznesenovskiy, Zaporizhzhya, Ukraine</p>
                             </div>
                         </li>
                         <li>
@@ -172,22 +171,22 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="exampleModalLabel">Online contact</h4>
+                        <h3 class="modal-title" id="exampleModalLabel">Online contact</h3>
                     </div>
                     <div class="modal-body conteiner">
-                        <form role="form">
-                            <div class="row">
+                        <form id="main_form" role="form">
+                            <div class="row delegation">
                                 <div class="form-group col-lg-4">
                                     <label>Name</label>
-                                    <input type="text" class="form-control">
+                                    <input id="name" type="text" class="form-control">
                                 </div>
                                 <div class="form-group col-lg-4">
                                     <label>Email Address</label>
-                                    <input type="email" class="form-control">
+                                    <input id="email" type="email" class="form-control">
                                 </div>
                                 <div class="form-group col-lg-4">
                                     <label>Phone Number</label>
-                                    <input type="tel" class="form-control">
+                                    <input id="phone_number" type="tel" class="form-control">
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="form-group col-lg-12">
@@ -198,12 +197,26 @@
                                     <input type="hidden" name="save" value="contact">
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
+                                <p class="errors"></p>
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-success">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="fotoModal" tabindex="-1" role="dialog" aria-labelledby="fotoModalLabel">
+            <div class="modal-dialog foto-dialog" role="document">
+                <div class="modal-content">
+                	<div class="modal-header foto-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body foto-body">
+                        <img class="img-responsive" src="img/photo-big.png">
                     </div>
                 </div>
             </div>

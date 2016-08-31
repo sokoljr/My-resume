@@ -86,13 +86,6 @@ body {
   border: none;
 }
 
-.save {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -32px;
-  width: 32px;
-  height: 32px;
-}
-
 .print {
   background-image: url(../img/sprite.png);
   background-position: -32px 0px;
@@ -112,6 +105,42 @@ body {
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
+}
+
+.errors {
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 15px;
+  height: 23px;
+  padding: 2px 0 10px 10px;
+}
+
+.border_red {
+  border: 2px solid red;
+}
+
+.foto-dialog {
+  max-width: 430px;
+  margin: 100px auto;
+}
+
+.foto-header {
+  float: right;
+  border: none;
+  padding: 15px 15px 0;
+}
+
+.foto-body {
+  display: inline-block;
+}
+
+.close {
+  font-size: 28px;
+}
+
+.form-control:focus {
+  background-color: #ffffcc;
 }
 
 .about {
