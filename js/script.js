@@ -59,6 +59,8 @@ $(document).ready(function(){
 		var nameLen = form.find("#name").val().length;
 		var email = form.find("#email").val();
 		var number = form.find("#phone_number").val();
+		var message = form.find("#message").val();
+		var messageLen = form.find("#message").val().length;
 		var numberLen = number.length;
 		var errors = $("p.errors");
 		
@@ -107,6 +109,18 @@ $(document).ready(function(){
 		if (numberLen < 6) {
 		errors.html("Entered phone number is too short!");
 		$("#phone_number").addClass("border_red");
+		return;
+		}
+
+		if (message === ""){
+			errors.html("Please enter Your message!");
+			$("#message").addClass("border_red");
+			return;
+		}
+		
+		if (messageLen < 2) {
+		errors.html("Your message is too short!");
+		$("#message").addClass("border_red");
 		return;
 		}
 		this.submit();

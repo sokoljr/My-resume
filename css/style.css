@@ -277,20 +277,6 @@ body {
   display: block;
 }
 
-.icon-vk {
-  background-image: url(../img/sprite-footer.png);
-  background-position: -96px 0px;
-  width: 48px;
-  height: 48px;
-}
-
-.icon-vk:hover {
-  background-image: url(../img/sprite-footer.png);
-  background-position: -96px -48px;
-  width: 48px;
-  height: 48px;
-}
-
 .icon-facebook {
   background-image: url(../img/sprite-footer.png);
   background-position: 0px 0px;
