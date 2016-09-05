@@ -36,7 +36,7 @@ body {
 .photo {
   float: left;
   padding: 10px;
-  margin: 0 35px 30px 0;
+  margin: 0 35px 35px 0;
   background: #f6f6f6;
   border: solid 1px #d5d5d5;
   -webkit-box-shadow: 0px 17px 9px -8px rgba(0,0,0,0.79);
@@ -86,23 +86,37 @@ body {
   border: none;
 }
 
+.word {
+  background-image: url(../img/sprite.png);
+  background-position: -144px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.pdf {
+  background-image: url(../img/sprite.png);
+  background-position: -32px -96px;
+  width: 32px;
+  height: 32px;
+}
+
 .print {
   background-image: url(../img/sprite.png);
-  background-position: -32px 0px;
+  background-position: -64px -96px;
   width: 32px;
   height: 32px;
 }
 
 .view-photo {
   background-image: url(../img/sprite.png);
-  background-position: -32px -32px;
+  background-position: -96px -96px;
   width: 32px;
   height: 32px;
 }
 
 .mail-top {
   background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -96px;
   width: 32px;
   height: 32px;
 }
@@ -186,6 +200,7 @@ body {
 
 .content h5 {
   float: left;
+  text-transform: uppercase;
   margin-left: 10px;
   display: inline;
   background: #2F597F;
@@ -198,7 +213,8 @@ body {
   padding-top: 10px; 
   padding-bottom: 0; 
   margin-bottom: 0; 
-} 
+}
+
 .content ul.list { 
   margin: 30px 0 45px 45px; 
   list-style: none;  
@@ -278,28 +294,43 @@ body {
 }
 
 .icon-facebook {
-  background-image: url(../img/sprite-footer.png);
-  background-position: 0px 0px;
+  background-image: url(../img/sprite.png);
+  background-position: -48px -48px;
   width: 48px;
   height: 48px;
 }
 
 .icon-facebook:hover {
-  background-image: url(../img/sprite-footer.png);
-  background-position: -48px 0px;
+  background-image: url(../img/sprite.png);
+  background-position: -96px 0px;
   width: 48px;
   height: 48px;
 }
+
 .icon-git {
-  background-image: url(../img/sprite-footer.png);
-  background-position: 0px -48px;
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
   width: 48px;
   height: 48px;
 }
 
 .icon-git:hover {
-  background-image: url(../img/sprite-footer.png);
-  background-position: -48px -48px;
+  background-image: url(../img/sprite.png);
+  background-position: 0px -48px;
+  width: 48px;
+  height: 48px;
+}
+
+.icon-linkedin {
+  background-image: url(../img/sprite.png);
+  background-position: -96px -48px;
+  width: 48px;
+  height: 48px;
+}
+
+.icon-linkedin:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -48px 0px;
   width: 48px;
   height: 48px;
 }

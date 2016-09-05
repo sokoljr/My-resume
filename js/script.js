@@ -34,6 +34,10 @@ $(document).ready(function(){
 	Cufon.replace('.contact>ul>li>div>p, .contact>ul>li>div>a', {
 		fontSize: '22px'
 	});
+	Cufon.replace('.description, #cufon_lis', {
+		fontSize: '20px',
+		letterSpacing: '1px'
+	});
 	Cufon.replace('.form-group button, .modal-footer button', {
 		fontSize: '18px',
 		letterSpacing: '1px', 
