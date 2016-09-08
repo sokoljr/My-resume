@@ -182,7 +182,7 @@ body {
 }
 
 .contact > ul > li > div > a {
-  color: blue;
+  color: #4db8ff;
   margin-left: 10px;
 }
 
@@ -209,7 +209,6 @@ body {
 
 .content .description {
   display: inline-block;
-  text-indent: 20px;
   padding-top: 10px; 
   padding-bottom: 0; 
   margin-bottom: 0; 

@@ -34,7 +34,7 @@ $(document).ready(function(){
 	Cufon.replace('.contact>ul>li>div>p, .contact>ul>li>div>a', {
 		fontSize: '22px'
 	});
-	Cufon.replace('.description, #cufon_lis', {
+	Cufon.replace('.description, #cufon_lis, #cufon_info', {
 		fontSize: '20px',
 		letterSpacing: '1px'
 	});
